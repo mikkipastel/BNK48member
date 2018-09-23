@@ -3,7 +3,7 @@ package com.mikkipastel.bnk48member.model
 import com.google.gson.annotations.SerializedName
 
 data class Bio(@SerializedName("food_allergies") val foodAllergies: FoodAllergies,
-               @SerializedName("dislike_foods") val dislikeFoods: dislikeFoods,
+               @SerializedName("dislike_foods") val dislikeFoods: DislikeFoods,
                @SerializedName("favourite_games") val favouriteGames: FavouriteGames,
                val likes: Likes,
                val dislikes: Dislikes,
