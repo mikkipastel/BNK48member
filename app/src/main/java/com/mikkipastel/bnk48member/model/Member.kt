@@ -4,8 +4,8 @@ import com.google.gson.annotations.SerializedName
 
 data class Member(val id: Int,
                   val slug: String,
-                  @SerializedName("first_name") val firstName: firstName,
-                  @SerializedName("last_name") val lastName: lastName,
+                  @SerializedName("first_name") val firstName: FirstName,
+                  @SerializedName("last_name") val lastName: LastName,
                   val nickname: Nickname,
                   val generation: Int,
                   @SerializedName("birth_date") val birthDate: Long,

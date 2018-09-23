@@ -1,4 +1,4 @@
 package com.mikkipastel.bnk48member.model
 
-data class dislikeSchoolSubjects(val en: String,
+data class DislikeSchoolSubjects(val en: String,
                                  val th: String)

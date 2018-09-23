@@ -1,4 +1,4 @@
 package com.mikkipastel.bnk48member.model
 
-data class foodAllergies(val en: String,
+data class FoodAllergies(val en: String,
                          val th: String)
