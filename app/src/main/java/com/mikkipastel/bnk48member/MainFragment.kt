@@ -55,6 +55,7 @@ class MainFragment: Fragment(), MemberListener {
         return gson.members
     }
 
+    /*@all-contributors @mikkipastel please add below block for tutorial*/
     override fun onItemClick() {
 
     }
