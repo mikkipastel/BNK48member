@@ -10,18 +10,14 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.mikkipastel.bnk48member.adapter.MemberAdapter
 import com.mikkipastel.bnk48member.adapter.MemberListener
-import com.mikkipastel.bnk48member.databinding.FragmentMainBinding
 import com.mikkipastel.bnk48member.model.ListMemberItem
 import com.mikkipastel.bnk48member.model.Member
 import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment: Fragment(), MemberListener {
 
-    private lateinit var binding: FragmentMainBinding
-
-    override fun onCreateView(layoutInflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentMainBinding.inflate(layoutInflater, container, false)
-        return binding.root
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,7 +27,7 @@ class MainFragment: Fragment(), MemberListener {
 
         val memberAdapter = MemberAdapter(memberList, this)
 
-        binding.recyclerView.apply {
+        recyclerView.apply {
             layoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
             isNestedScrollingEnabled = false
             adapter = memberAdapter
